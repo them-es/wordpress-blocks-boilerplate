@@ -1,0 +1,22 @@
+{
+	"name": "wordpress-blocks-boilerplate",
+	"version": "1.0.0",
+	"homepage": "http://them.es",
+	"author": "them.es",
+	"description": "them.es WordPress Blocks boilerplate",
+	"license": "GPLv2+",
+	"scripts": {
+		"build": "wp-scripts build",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses --production",
+		"lint:css": "wp-scripts lint-style '**/*.css'",
+		"lint:js": "wp-scripts lint-js .",
+		"lint:pkg-json": "wp-scripts lint-pkg-json .",
+		"start": "wp-scripts start",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js"
+	},
+	"dependencies": {
+		"@wordpress/scripts": "3.1.0"
+	}
+}
