@@ -14,8 +14,14 @@
 
 ## Setup
 * Prerequisites: [Node.js](https://nodejs.org) (NPM) needs to be installed on your system
-* Download the source code to a new directory (e.g. `/blocks`) in your WordPress theme
-* Add `$theme_blocks = __DIR__ . '/blocks/index.php'; if ( is_readable( $theme_blocks ) ) : require_once $theme_blocks; endif;` in `functions.php`
+* [Download](https://github.com/them-es/wordpress-blocks-starter/archive/master.zip) the source code to a new directory (e.g. `/blocks`) in your WordPress theme
+* Add the following code snippet to `functions.php` in your theme
+```
+$theme_blocks = __DIR__ . '/blocks/index.php';
+if ( is_readable( $theme_blocks ) ) :
+	require_once $theme_blocks;
+endif;
+```
 * Open `/blocks` in Terminal and install the required Node.js dependencies
 * `$ npm install`
 * A simple `Hello world` block implementation is included to get you started. More examples can be found in the official [Gutenberg examples repository](https://github.com/WordPress/gutenberg-examples)
