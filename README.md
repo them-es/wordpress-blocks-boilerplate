@@ -1,6 +1,6 @@
 ## them.es WordPress Blocks
 
-**them.es WordPress Blocks** is a WordPress "Gutenberg" blocks boilerplate to include in a theme.
+**them.es WordPress Blocks** is a WordPress "Gutenberg" blocks boilerplate which can be included in a theme.
 
 
 ## What's included?
@@ -8,7 +8,8 @@
 * NPM configuration
 * ESNext
 * Support for Editor color palettes
-* Block category
+* Support for a category where all custom blocks can be organized
+* A simple "Hello world" block implementation is included
 * Optional: Easily add more blocks
 
 
@@ -25,13 +26,13 @@ endif;
 * Open `/blocks` in Terminal and install the required Node.js dependencies
 * `$ npm install`
 * A simple `Hello world` block implementation is included to get you started. More examples can be found in the official [Gutenberg examples repository](https://github.com/WordPress/gutenberg-examples)
-* You can easily add more blocks by duplicating `/src/block1` and importing the new block directory in `/src/index.js`
+* You can easily include additional blocks by duplicating `/src/block#` and referencing the new block(s) in `/src/index.js`
 * Run the **`start`** script
 * `$ npm run start`
-* Develop the block(s) - [Tutorial](https://wordpress.org/gutenberg/handbook/designers-developers/developers/tutorials/block-tutorial/writing-your-first-block-type) - by modifying the block sources `/src/block#/index.js`
-* When you're done run the **`build`** script to create the minified version
+* Develop the block(s) by modifying `/src/block#/index.js` - the official [Gutenberg Handbook](https://wordpress.org/gutenberg/handbook/designers-developers/developers/tutorials/block-tutorial/writing-your-first-block-type) may help you learn how to build blocks
+* When you're done run the **`build`** script to create a minified version of your blocks
 * `$ npm run build`
-* Now you can test the block in the WordPress Editor
+* Now you can test the block(s) in the WordPress Editor
 
 
 ## Technology
