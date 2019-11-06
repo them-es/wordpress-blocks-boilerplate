@@ -15,7 +15,7 @@
 
 ## Setup
 * Prerequisites: [Node.js](https://nodejs.org) (NPM) needs to be installed on your system
-* [Download](https://github.com/them-es/wordpress-blocks-starter/archive/master.zip) the source code to a new directory (e.g. `/blocks`) in your WordPress theme
+* [Download](https://github.com/them-es/wordpress-blocks-starter/archive/master.zip) the source code of this repository to a new directory (e.g. `/blocks`) in your WordPress theme
 * Add the following code snippet to `functions.php` in your theme
 ```
 $theme_blocks = __DIR__ . '/blocks/index.php';
