@@ -3,14 +3,12 @@
  * https://wordpress.org/gutenberg/handbook/designers-developers/developers/tutorials/block-tutorial/writing-your-first-block-type
  */
 
-const { __ } = wp.i18n;
-const {
-	registerBlockType,
-} = wp.blocks;
-const {
+import { __ } from '@wordpress/i18n';
+import { registerBlockType } from '@wordpress/blocks';
+import {
 	InspectorControls,
 	PanelColorSettings,
-} = wp.editor;
+} from '@wordpress/blockEditor';
 
 registerBlockType( 'theme-blocks/block1', {
 	title: __( 'Block 1' ),
