@@ -17,6 +17,6 @@
 		"test:unit": "wp-scripts test-unit-js"
 	},
 	"dependencies": {
-		"@wordpress/scripts": "3.1.0"
+		"@wordpress/scripts": "^5.0.0"
 	}
 }
