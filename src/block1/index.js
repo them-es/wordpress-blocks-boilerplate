@@ -27,15 +27,15 @@ registerBlockType( 'theme-blocks/block1', {
 
 		const onSetBackgroundColor = ( val ) => {
 			//console.log( val );
-			setAttributes({
+			setAttributes( {
 				blockBackgroundColor: val
-			})
+			} )
 		};
 		const onSetTextColor = ( val ) => {
 			//console.log( val );
-			setAttributes({
+			setAttributes( {
 				blockTextColor: val
-			})
+			} )
 		};
 
 		const blockStyle = {
@@ -43,9 +43,9 @@ registerBlockType( 'theme-blocks/block1', {
 			color: blockTextColor ? blockTextColor : undefined,
 			padding: '20px',
 		};
-		
+
 		// Markup: Backend
-		return ([
+		return ( [
 			<InspectorControls>
 				<div>
 					<PanelColorSettings
@@ -74,7 +74,7 @@ registerBlockType( 'theme-blocks/block1', {
 				<h2>Hello world</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-		]);
+		] );
 	},
 
 	save: props => {
