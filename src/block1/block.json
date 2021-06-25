@@ -1,0 +1,24 @@
+{
+	"apiVersion": 2,
+	"name": "theme-blocks/block1",
+	"title": "Block 1",
+	"icon": "grid-view",
+	"category": "theme-blocks",
+	"supports": {
+		"anchor": true
+	},
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"content": {
+			"type": "string"
+		},
+		"backgroundcolor": {
+			"type": "string"
+		},
+		"textcolor": {
+			"type": "string"
+		}
+	}
+}
