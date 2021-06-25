@@ -7,7 +7,6 @@
 * Gutenberg blocks configuration tested in **WordPress >5.1 ... <5.8**
 * NPM configuration
 * ESNext
-* Support for Editor color palettes
 * Support for a category where all custom blocks can be organized
 * A simple "Hello world" block implementation is included
 * Optional: Easily add more blocks
@@ -43,6 +42,6 @@ endif;
 
 ## Copyright & License
 
-Code and Documentation &copy; [them.es](http://them.es)
+Code and Documentation &copy; [them.es](https://them.es)
 
-Code released under [GPLv2+](http://www.gnu.org/licenses/gpl-2.0.html)
+Code released under [GPLv2+](https://www.gnu.org/licenses/gpl-2.0.html)
