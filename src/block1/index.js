@@ -1,6 +1,7 @@
 /**
- * Block 1
- * https://wordpress.org/gutenberg/handbook/designers-developers/developers/tutorials/block-tutorial/writing-your-first-block-type
+ * Block 1.
+ * 
+ * @see https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/writing-your-first-block-type/
  */
 
 import { __ } from '@wordpress/i18n';
@@ -15,7 +16,7 @@ registerBlockType( 'theme-blocks/block1', {
 	icon: 'grid-view', // https://developer.wordpress.org/resource/dashicons
 	category: 'theme-blocks', // Custom category: see index.php
 
-	edit: props => {
+	edit: ( props ) => {
 		const {
 			className,
 			attributes: {
@@ -28,13 +29,13 @@ registerBlockType( 'theme-blocks/block1', {
 		const onSetBackgroundColor = ( val ) => {
 			//console.log( val );
 			setAttributes( {
-				blockBackgroundColor: val
+				blockBackgroundColor: val,
 			} )
 		};
 		const onSetTextColor = ( val ) => {
 			//console.log( val );
 			setAttributes( {
-				blockTextColor: val
+				blockTextColor: val,
 			} )
 		};
 
@@ -77,7 +78,7 @@ registerBlockType( 'theme-blocks/block1', {
 		] );
 	},
 
-	save: props => {
+	save: ( props ) => {
 		const {
 			className,
 			attributes: {

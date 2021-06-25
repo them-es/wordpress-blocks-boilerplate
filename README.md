@@ -4,7 +4,7 @@
 
 
 ## What's included?
-* Gutenberg blocks configuration tested in WordPress v5.1+
+* Gutenberg blocks configuration tested in **WordPress >5.1 ... <5.8**
 * NPM configuration
 * ESNext
 * Support for Editor color palettes
