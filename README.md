@@ -8,7 +8,6 @@
 * **The legacy boilerplate which is compatible with WordPress <5.8 can be found in the "v1" branch**
 * NPM configuration
 * ESNext
-* Support for Editor color palettes
 * Support for a category where all custom blocks can be organized
 * A simple "Hello world" block implementation is included
 * Optional: Easily add more blocks
@@ -17,12 +16,12 @@
 ## Setup
 * Prerequisites: [Node.js](https://nodejs.org) (NPM) needs to be installed on your system
 * [Download](https://github.com/them-es/wordpress-blocks-starter/archive/master.zip) the source code of this repository to a new directory (e.g. `/blocks`) in your WordPress theme
-* Add the following code snippet to `functions.php` in your theme
+* Add the following code snippet to `functions.php` in your theme (or plugin)
 ```
 $theme_blocks = __DIR__ . '/blocks/index.php';
-if ( is_readable( $theme_blocks ) ) :
+if ( is_readable( $theme_blocks ) ) {
 	require_once $theme_blocks;
-endif;
+}
 ```
 * Open `/blocks` in Terminal and install the required Node.js dependencies
 * `$ npm install`
@@ -44,6 +43,6 @@ endif;
 
 ## Copyright & License
 
-Code and Documentation &copy; [them.es](http://them.es)
+Code and Documentation &copy; [them.es](https://them.es)
 
-Code released under [GPLv2+](http://www.gnu.org/licenses/gpl-2.0.html)
+Code released under [GPLv2+](https://www.gnu.org/licenses/gpl-2.0.html)
