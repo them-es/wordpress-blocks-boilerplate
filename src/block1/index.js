@@ -14,6 +14,7 @@ import edit from './edit';
 import save from './save';
 //import deprecated from './deprecated';
 
+import './style.css';
 import metadata from './block.json';
 
 const { name } = metadata;

@@ -27,22 +27,21 @@ function wordpress_blocks_starter_block_categories( $block_categories, $block_ed
 add_filter( 'block_categories_all', 'wordpress_blocks_starter_block_categories', 10, 2 );
 
 /**
- * Enqueue block assets: Backend.
- * https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/tutorials/javascript/js-build-setup.md#dependency-management
+ * Enqueue Theme-Blocks: Backend.
  *
  * @return void
  */
-function wordpress_blocks_starter_enqueue_block_editor_assets() {
-	$blocks_dir = basename( __DIR__ ) . '/build/';
+function wordpress_blocks_starter_auto_register_block_types() {
+	if ( file_exists( __DIR__ . '/build/' ) ) {
+		$block_json_files = glob( __DIR__ . '/build/*/block.json' );
 
-	$blocks_asset_file = include get_theme_file_path( $blocks_dir . 'index.asset.php' ); // Plugin path: plugin_dir_path( dirname( __FILE__ ) ) . $blocks_dir . '/index.asset.php';
+		// Autoregister all blocks found in the `build/blocks` folder.
+		foreach ( $block_json_files as $filename ) {
+			$block_folder = dirname( $filename );
 
-	wp_enqueue_script(
-		'wordpress-blocks-starter-blocks',
-		get_theme_file_uri( $blocks_dir . 'index.js' ), // Plugin path: plugin_dir_url( dirname( __FILE__ ) ) . $blocks_dir . '/index.js',
-		$blocks_asset_file['dependencies'],
-		$blocks_asset_file['version'],
-		true
-	);
+			// https://developer.wordpress.org/reference/functions/register_block_type/
+			register_block_type( $block_folder );
+		}
+	}
 }
-add_action( 'enqueue_block_editor_assets', 'wordpress_blocks_starter_enqueue_block_editor_assets' );
+add_action( 'init', 'wordpress_blocks_starter_auto_register_block_types' );

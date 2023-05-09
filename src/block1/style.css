@@ -1,0 +1,5 @@
+.wp-block-theme-blocks-block1 h2,
+.wp-block-theme-blocks-block1 .h2 {
+	font-size: var(--wp--preset--font-size--large);
+	text-transform: uppercase;
+}
