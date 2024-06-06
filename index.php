@@ -37,10 +37,8 @@ function wordpress_blocks_starter_auto_register_block_types() {
 
 		// Autoregister all blocks found in the `build/blocks` folder.
 		foreach ( $block_json_files as $filename ) {
-			$block_folder = dirname( $filename );
-
 			// https://developer.wordpress.org/reference/functions/register_block_type/
-			register_block_type( $block_folder );
+			register_block_type( dirname( $filename ) );
 		}
 	}
 }
