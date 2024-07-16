@@ -1,3 +1,5 @@
+> Heads-up: The `main` branch is [only compatible with WordPress v6.6+](https://github.com/WordPress/gutenberg/blob/HEAD/packages/scripts/CHANGELOG.md#2800-2024-05-31).
+
 ## them.es WordPress Blocks
 
 **them.es WordPress Blocks** is a WordPress "Gutenberg" blocks boilerplate which can be included in a theme.
@@ -5,7 +7,7 @@
 ## What's included?
 
 -   Gutenberg blocks configuration tested in **WordPress v6.6+**
--   **The legacy boilerplates have been archived the following branches: WordPress <6.6 ("v2" branch) and WordPress <5.8 ("v1" branch)**
+-   **All legacy boilerplates have been archived in the following branches: WordPress <6.6 ("v2" branch) and WordPress <5.8 ("v1" branch)**
 -   NPM configuration
 -   ESNext
 -   Support for a category where all custom blocks can be organized
