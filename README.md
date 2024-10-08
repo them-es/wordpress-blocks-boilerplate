@@ -1,4 +1,5 @@
-> Heads-up: The `main` branch is [only compatible with WordPress v6.6+](https://github.com/WordPress/gutenberg/blob/HEAD/packages/scripts/CHANGELOG.md#2800-2024-05-31).
+> [!NOTE]
+> The `main` branch is [only compatible with WordPress v6.6+](https://github.com/WordPress/gutenberg/blob/HEAD/packages/scripts/CHANGELOG.md#2800-2024-05-31).
 
 ## them.es WordPress Blocks
 
