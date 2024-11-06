@@ -1,6 +1,12 @@
-import { __ } from '@wordpress/i18n';
-import { useBlockProps, PlainText, RichText, InspectorControls, PanelColorSettings } from '@wordpress/block-editor';
-import './style.css';
+import { __ } from "@wordpress/i18n";
+import {
+	useBlockProps,
+	PlainText,
+	RichText,
+	InspectorControls,
+	PanelColorSettings,
+} from "@wordpress/block-editor";
+import "./style.css";
 
 /**
  * Edit function.
@@ -40,11 +46,11 @@ export default function edit({ className, attributes, setAttributes }) {
 	const blockStyle = {
 		backgroundColor: backgroundcolor ? backgroundcolor : undefined,
 		color: textcolor ? textcolor : undefined,
-		padding: '20px',
+		padding: "20px",
 	};
 
 	const blockProps = useBlockProps({
-		className: className ? className : '',
+		className: className ? className : "",
 		style: blockStyle,
 	});
 
@@ -54,17 +60,17 @@ export default function edit({ className, attributes, setAttributes }) {
 				<div>
 					<PanelColorSettings
 						initialOpen={false}
-						title={__('Custom Color Settings')}
+						title={__("Custom Color Settings")}
 						colorSettings={[
 							{
 								value: backgroundcolor,
 								onChange: onChangeBackgroundColor,
-								label: __('Background Color'),
+								label: __("Background Color"),
 							},
 							{
 								value: textcolor,
 								onChange: onChangeTextColor,
-								label: __('Text Color'),
+								label: __("Text Color"),
 							},
 						]}
 					/>
@@ -72,8 +78,18 @@ export default function edit({ className, attributes, setAttributes }) {
 			</InspectorControls>
 
 			<div {...blockProps}>
-				<PlainText className="h2" placeholder={__('Title…')} value={title} onChange={onChangeTitle} />
-				<RichText multiline="p" placeholder={__('Content…')} value={content} onChange={onChangeContent} />
+				<PlainText
+					className="h2"
+					placeholder={__("Title…")}
+					value={title}
+					onChange={onChangeTitle}
+				/>
+				<RichText
+					multiline="p"
+					placeholder={__("Content…")}
+					value={content}
+					onChange={onChangeContent}
+				/>
 			</div>
 		</>
 	);

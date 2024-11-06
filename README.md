@@ -3,7 +3,7 @@
 
 ## them.es WordPress Blocks
 
-**them.es WordPress Blocks** is a WordPress "Gutenberg" blocks boilerplate which can be included in a theme.
+**them.es WordPress Blocks** is a WordPress "Gutenberg" blocks boilerplate which can be included in a theme (or plugin).
 
 ## What's included?
 
@@ -18,8 +18,8 @@
 ## Setup
 
 -   Prerequisites: [Node.js](https://nodejs.org) (NPM) needs to be installed on your system
--   [Download](https://github.com/them-es/wordpress-blocks-starter/archive/master.zip) the source code of this repository to a **new directory** (e.g. `/blocks`) in your WordPress theme
--   Add the following code snippet to `functions.php` in your theme (or reference it in your plugin's index.php file)
+-   [Download](https://github.com/them-es/wordpress-blocks-starter/archive/master.zip) the source code of this repository to a **new directory** (e.g. `/blocks`)
+-   Add the following code snippet to `functions.php` in your theme (or reference it in your plugin index file)
 
 ```
 $theme_blocks = __DIR__ . '/blocks/index.php';

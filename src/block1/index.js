@@ -4,18 +4,18 @@
  * @see https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/writing-your-first-block-type/
  */
 
-import { __ } from '@wordpress/i18n';
-import { registerBlockType } from '@wordpress/blocks';
+import { __ } from "@wordpress/i18n";
+import { registerBlockType } from "@wordpress/blocks";
 
 /**
  * Internal dependencies
  */
-import edit from './edit';
-import save from './save';
+import edit from "./edit";
+import save from "./save";
 //import deprecated from './deprecated';
 
-import './style.css';
-import metadata from './block.json';
+import "./style.css";
+import metadata from "./block.json";
 
 const { name } = metadata;
 

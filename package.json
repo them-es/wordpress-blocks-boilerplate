@@ -1,6 +1,6 @@
 {
 	"name": "wordpress-blocks-boilerplate",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"homepage": "https://them.es",
 	"author": "them.es",
 	"description": "WordPress v6.6+ Blocks boilerplate",
@@ -17,8 +17,8 @@
 		"test:unit": "wp-scripts test-unit-js"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^28.1.0",
-		"@wordpress/babel-preset-default": "^8.1.0",
-		"@wordpress/dependency-extraction-webpack-plugin": "^6.1.0"
+		"@wordpress/scripts": "^30.4.0",
+		"@wordpress/babel-preset-default": "^8.11.0",
+		"@wordpress/dependency-extraction-webpack-plugin": "^6.11.0"
 	}
 }
